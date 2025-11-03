@@ -20,7 +20,8 @@ void fun1(int slp)
 }
 
 struct gfun {
-	int operator()(int n) {
+	int operator()(int n) 
+	{
 		printf("%d  hello, gfun !  %d\n" ,n, std::this_thread::get_id() );
 		return 42;
 	}
